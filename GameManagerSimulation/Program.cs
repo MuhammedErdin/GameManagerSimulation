@@ -15,7 +15,7 @@ namespace GameManagerSimulation
         static void Main(string[] args)
         {
             BaseGamerManager gamerManager = new GamerManager(new MernisServiceAdapter());
-            gamerManager.Save(new Gamer { DateOfBirth = new DateTime(2002, 9, 11), FirstName = "Muhammed", LastName = "Erdin", Id = 1, NationalityId = "17944305542" });
+            gamerManager.Save(new Gamer { DateOfBirth = new DateTime(YIL, AY, GÜN), FirstName = "İSİM", LastName = "SOYİSİM", Id = 1, NationalityId = "TCNO" });
             Console.ReadLine();
 
             BaseGameManager gameManager = new GameManager();
