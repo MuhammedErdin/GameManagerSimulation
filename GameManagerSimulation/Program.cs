@@ -15,14 +15,14 @@ namespace GameManagerSimulation
         static void Main(string[] args)
         {
             BaseGamerManager gamerManager = new GamerManager(new MernisServiceAdapter());
-            gamerManager.Save(new Gamer { DateOfBirth = new DateTime(YIL, AY, GÜN), FirstName = "İSİM", LastName = "SOYİSİM", Id = 1, NationalityId = "TCNO" });
+            gamerManager.Save(new Gamer { DateOfBirth = new DateTime(2002, 11, 09), FirstName = "İSİM", LastName = "SOYİSİM", Id = 1, NationalityId = "TCNO" });
             Console.ReadLine();
 
             BaseGameManager gameManager = new GameManager();
-            gameManager.Add(new Game { GameName = "Celese ", GamePrice = 600, DiscountRate = 10 });
+            gameManager.Add(new Game { GameName = "Celeste ", GamePrice = 600, DiscountRate = 10 });
 
             BaseCampaignManager campaignManager = new CampaignManager();
-            campaignManager.Add(new Campaign { Name = "Yılbaşı Kampanyası" });
+            campaignManager.Add(new Campaign { Name = "Yaz Festivali" });
         }
     }
 }
